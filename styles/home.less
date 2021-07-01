@@ -1,0 +1,48 @@
+@import 'global';
+
+.content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr;
+  grid-template-areas: 
+    'cabecalho cabecalho'
+    'esquerda direita'
+  ;
+}
+
+header {
+  grid-area: cabecalho;
+}
+
+#bg {
+  grid-area: esquerda;
+  background: url('/assets/home-bg-img.svg') no-repeat top/contain;
+}
+
+main {
+  grid-area: direita;
+  display: flex;
+  align-items: center;
+
+  .container {
+    width: min(36.3rem 100%);
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;  
+    color: @--black;
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+  }
+
+  input {
+    border: .2rem solid @--grey-blue;
+    padding: 0 1.6rem;    
+  }
+
+  input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
+  }
+}
+
