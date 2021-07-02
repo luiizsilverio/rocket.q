@@ -12,6 +12,7 @@ html {
 body {
   height: 100vh;
   background-color: #F6FAFF;
+  display: flex;
 }
 body,
 button,

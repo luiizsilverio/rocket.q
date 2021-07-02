@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 10px */
+}
+body {
+  height: 100vh;
+  background-color: #F6FAFF;
+  display: flex;
+}
+body,
+button,
+input,
+textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: 'Open Sans', sans-serif;
+}
+.sr-only {
+  visibility: hidden;
+  position: absolute;
+}
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+input,
+button,
+.button {
+  border-radius: 0.8rem;
+  height: 5rem;
+}
+button,
+.button {
+  font-family: 'Poppins';
+  font-weight: 500;
+  line-height: 0;
+  background: #3485FF;
+  color: #FAFAFA;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s;
+}
+button:hover,
+.button:hover {
+  filter: brightness(1.2);
+}
+button img,
+.button img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+.outlined {
+  background: #FAFAFA;
+  color: #3485FF;
+  border: 0.2rem solid #3485FF;
+}
+.content header {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+.content header img {
+  width: 16.7rem;
+}
+.content {
+  max-width: 90%;
+}
+#room header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#room header .buttons {
+  display: flex;
+}
+#room header .buttons .button:nth-child(1) {
+  margin-right: 0.8rem;
+  padding: 1.3rem 1.6rem;
+}
+#room header .buttons .button:nth-child(1) img {
+  margin-left: 1.11rem;
+  width: 2rem;
+  height: 2rem;
+}
+#room header .buttons .button:nth-child(2) {
+  padding: 1.3rem 3.2rem;
+}
+#room header .buttons .button:nth-child(2) img {
+  width: 2rem;
+  height: 2rem;
+}
