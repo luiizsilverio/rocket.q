@@ -70,7 +70,7 @@ button img,
   width: 16.7rem;
 }
 .content {
-  max-width: 90%;
+  max-width: min(112rem, 90%);
 }
 #room header {
   width: 100%;
@@ -96,4 +96,49 @@ button img,
 #room header .buttons .button:nth-child(2) img {
   width: 2rem;
   height: 2rem;
+}
+#room #question-form h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #0D114F;
+  margin-bottom: 2.4rem;
+  line-height: 4.2rem;
+}
+#room #question-form form {
+  border: 0.2rem solid #A1B2CD;
+  padding: 1.6rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 1.6rem;
+}
+#room #question-form form textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+  background: transparent;
+}
+#room #question-form form textarea::placeholder {
+  color: #A1B2CD;
+}
+#room #question-form form footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#room #question-form form footer > div {
+  font-family: 'Poppins', sans-serif;
+  color: #A5B0C1;
+  font-weight: 400;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#room #question-form form footer > div img {
+  margin-right: 0.9rem;
+}
+#room #question-form form footer button {
+  height: auto;
+  padding: 0.8rem 2.4rem;
+  line-height: 2.4rem;
 }
