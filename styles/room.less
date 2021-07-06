@@ -91,5 +91,58 @@
       }
     }
   }
+
+  .question-wrapper {
+    background-color: @--light-blue;
+    margin-bottom: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+    padding: 2.4rem;
+   
+    .question-content {
+      display: flex;
+      align-items: flex-start;
+
+      p {
+        margin-left: 1.6rem;
+        word-break: break-word;
+        display: flex;
+        align-items: center;
+        min-height: 5.5rem;
+      }
+
+      .user {
+        background-color: @--blue;
+        clip-path: circle();
+        padding: 1.4rem;
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        display: flex;
+        align-items: center;
+        
+        & + a {
+          margin-left: 2.4rem;
+        }
+
+        img {
+          margin-right: .8rem;
+        }
+      }
+    }
+
+    &.read {
+      background-color: @--grey-medium;
+
+      .user {
+        background-color: @--grey-blue;
+      }
+    }
+  }
 }
 

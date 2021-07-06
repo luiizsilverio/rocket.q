@@ -57,10 +57,11 @@
       <section id="questions">
         <h2 class="sr-only">Perguntas da comunidade</h2>
         <div class="questions">
+          
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
-                <img src="assets/avatar.svg" alt="Avatar">
+                <img src="assets/user.svg" alt="Avatar">
               </div>
               <div class="question">
                 <p>Qual a diferença entre const, var e let no Javascript?</p>
@@ -77,9 +78,70 @@
               </a>
             </div>
           </div>
-        </div>
+
+          <div class="question-wrapper">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é Javascript?</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="check">
+                <img src="assets/check.svg" alt="Marcar como lida">
+                Marcar como lida
+              </a>
+              <a href="" class="delete">
+                <img src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+          <div class="question-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>Quais as vantagens do Typescript sobre o Javascript? Isso não dificulta o trabalho do programador?</p>
+              </div>
+            </div>
+            <div class="actions">              
+              <a href="" class="delete">
+                <img src="assets/trash.svg" alt="Excluir">
+                Excluir
+              </a>
+            </div>
+          </div>
+
+        </div>        
       </section>
     </main>
   </div>
+
+  <!-- MODAL -->
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2>Excluir</h2>
+      <p>Tem certeza que deseja excluir esta pergunta?</p>
+
+      <form action="">
+        <label for="password" class="sr-only">
+          Digite sua senha
+        </label>
+        <input type="password" name="password" id="password"
+          placeholder="Digite sua senha" 
+        />
+        <div class="buttons">
+          <div class="button">Cancelar</div>
+          <button>Sim, excluir</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>

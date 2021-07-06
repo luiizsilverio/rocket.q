@@ -142,3 +142,46 @@ button img,
   padding: 0.8rem 2.4rem;
   line-height: 2.4rem;
 }
+#room .question-wrapper {
+  background-color: #E0ECFF;
+  margin-bottom: 0.8rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  padding: 2.4rem;
+}
+#room .question-wrapper .question-content {
+  display: flex;
+  align-items: flex-start;
+}
+#room .question-wrapper .question-content p {
+  margin-left: 1.6rem;
+  word-break: break-word;
+  display: flex;
+  align-items: center;
+  min-height: 5.5rem;
+}
+#room .question-wrapper .question-content .user {
+  background-color: #3485FF;
+  clip-path: circle();
+  padding: 1.4rem;
+}
+#room .question-wrapper .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#room .question-wrapper .actions a {
+  display: flex;
+  align-items: center;
+}
+#room .question-wrapper .actions a + a {
+  margin-left: 2.4rem;
+}
+#room .question-wrapper .actions a img {
+  margin-right: 0.8rem;
+}
+#room .question-wrapper.read {
+  background-color: #EAECF2;
+}
+#room .question-wrapper.read .user {
+  background-color: #A1B2CD;
+}
