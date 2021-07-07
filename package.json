@@ -1,0 +1,26 @@
+{
+  "name": "rocketq",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido na Maratona Discovery para gerenciar perguntas anônimas de usuários direcionadas ao dono da página",
+  "main": "index.js",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiizsilverio/rocket.q.git"
+  },
+  "author": "Luiz Oliveira <luiiz.silverio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luiizsilverio/rocket.q/issues"
+  },
+  "homepage": "https://github.com/luiizsilverio/rocket.q#readme",
+  "dependencies": {
+    "cowsay": "^1.5.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

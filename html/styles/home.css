@@ -69,6 +69,16 @@ button img,
 .content header img {
   width: 16.7rem;
 }
+button.red,
+.button.red {
+  background-color: #E83F58;
+  color: #FAFAFA;
+}
+button.grey,
+.button.grey {
+  background-color: #E5EAF1;
+  color: #4D5E77;
+}
 .content {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -101,6 +111,7 @@ main h2 {
 main input {
   border: 0.2rem solid #A1B2CD;
   padding: 0 1.6rem;
+  outline: none;
 }
 main input,
 main button,

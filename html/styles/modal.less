@@ -8,7 +8,17 @@
   left: 0;
   background-color: rgba(4, 9, 11, .8);
   display: flex;
+
+  &:not(.active) {
+    visibility: hidden;
+    opacity: 0;
+  }
   
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .modal {
     width: min(59rem, 90%);
     background-color: @--white;
@@ -18,6 +28,8 @@
     text-align: center;
     padding: 6.4rem;
 
+    
+    
     h2 {
       font-size: 2.4rem;
       font-weight: 700;
@@ -37,7 +49,6 @@
       border: .2rem solid @--blue;
       outline: none;
       width: min(70%, 30.2rem);
-
     }
 
     .buttons {

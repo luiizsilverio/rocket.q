@@ -88,6 +88,14 @@ button.grey,
   background-color: rgba(4, 9, 11, 0.8);
   display: flex;
 }
+.modal-wrapper:not(.active) {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-wrapper.active {
+  visibility: visible;
+  opacity: 1;
+}
 .modal-wrapper .modal {
   width: min(59rem, 90%);
   background-color: #FAFAFA;
