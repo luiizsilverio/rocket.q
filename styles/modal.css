@@ -79,3 +79,51 @@ button.grey,
   background-color: #E5EAF1;
   color: #4D5E77;
 }
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(4, 9, 11, 0.8);
+  display: flex;
+}
+.modal-wrapper .modal {
+  width: min(59rem, 90%);
+  background-color: #FAFAFA;
+  margin: auto;
+  border-radius: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 6.4rem;
+}
+.modal-wrapper .modal h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #0D114F;
+}
+.modal-wrapper .modal p {
+  margin-bottom: 2.4rem;
+  color: #4D5E77;
+}
+.modal-wrapper .modal input {
+  margin-bottom: 4rem;
+  border-radius: 8px;
+  padding: 1.3rem 1.6rem;
+  border: 0.2rem solid #3485FF;
+  outline: none;
+  width: min(70%, 30.2rem);
+}
+.modal-wrapper .modal .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-wrapper .modal .buttons > .button {
+  margin-right: 0.8rem;
+}
+.modal-wrapper .modal .buttons > button,
+.modal-wrapper .modal .buttons > .button {
+  padding: 1.3rem 3.2rem;
+}

@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="/styles/global.css" />
   <link rel="stylesheet" href="/styles/room.css" />
+  <link rel="stylesheet" href="/styles/modal.css" />
 </head>
 <body>
   <div id="room" class="content">
@@ -125,7 +126,7 @@
   <!-- MODAL -->
   <div class="modal-wrapper">
     <div class="modal">
-      <h2>Excluir</h2>
+      <h2>Excluir Pergunta</h2>
       <p>Tem certeza que deseja excluir esta pergunta?</p>
 
       <form action="">
@@ -135,9 +136,10 @@
         <input type="password" name="password" id="password"
           placeholder="Digite sua senha" 
         />
+
         <div class="buttons">
-          <div class="button">Cancelar</div>
-          <button>Sim, excluir</button>
+          <div class="button grey">Cancelar</div>
+          <button class="red">Sim, excluir</button>
         </div>
       </form>
     </div>
