@@ -2,11 +2,11 @@
   "name": "rocketq",
   "version": "1.0.0",
   "description": "Projeto desenvolvido na Maratona Discovery para gerenciar perguntas anônimas de usuários direcionadas ao dono da página",
-  "main": "index.js",
+  "main": "src/server.js",
   "keywords": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "start": "nodemon ."
   },
   "repository": {
     "type": "git",
