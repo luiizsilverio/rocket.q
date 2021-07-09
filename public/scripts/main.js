@@ -9,6 +9,13 @@ const modalButton = document.querySelector('.modal button')
 
 function handleClick(event, deletar = false) {
   event.preventDefault()
+
+  const action = deletar ? "delete" : "check"
+  const roomId = document.getElementById("room-id").dataset.id
+  const questionId = event.target.dataset.id
+  
+  const form = document.querySelector(".modal form")
+  form.setAttribute("action", `/room/${roomId}/${questionId}/${action}`)
   
   if (deletar) {
     modalTitle.innerHTML = 'Excluir Pergunta'
