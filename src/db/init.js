@@ -1,15 +1,15 @@
 const Database = require("./config")
 
 const initDb = {
-   async init() {
-      const db = await Database() // Abre o BD
+   async init(){
+      const db = await Database()
 
       await db.exec(`
          CREATE TABLE rooms (
             id INTEGER PRIMARY KEY,
             password TEXT
          )
-      `)
+      `);
 
       await db.exec(`
          CREATE TABLE questions (
@@ -18,10 +18,13 @@ const initDb = {
             read INT,
             room INT
          )
-      `)
+      `);
 
-      await db.close() // Fecha o BD
+      await db.close()
    }
 }
 
-initDb.init()
+initDb.init();
+
+// Rode somente uma vez este script, com o comando
+// npm run init-db
