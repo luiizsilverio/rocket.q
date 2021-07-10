@@ -15,7 +15,7 @@ function handleClick(event, deletar = false) {
   const questionId = event.target.dataset.id
   
   const form = document.querySelector(".modal form")
-  form.setAttribute("action", `/room/${roomId}/${questionId}/${action}`)
+  form.setAttribute("action", `/question/${roomId}/${questionId}/${action}`)
   
   if (deletar) {
     modalTitle.innerHTML = 'Excluir Pergunta'
