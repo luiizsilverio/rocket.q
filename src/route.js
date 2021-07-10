@@ -14,7 +14,7 @@ route.get('/create-room', (req, res) =>
 
 route.post('/create-room', RoomController.create)
 
-route.get('/room/:room', (req, res) => res.render("room"))
+route.get('/room/:room', RoomController.open)
 
 route.post('/question/:room/:question/:action', 
   QuestionController.index
