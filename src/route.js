@@ -20,4 +20,6 @@ route.post('/question/:room/:question/:action',
   QuestionController.index
 )
 
+route.post('/question/create/:room', QuestionController.create)
+
 module.exports = route
