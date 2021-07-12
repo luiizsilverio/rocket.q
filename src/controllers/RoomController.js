@@ -58,7 +58,16 @@ module.exports = {
          WHERE room = ${ roomId } AND read = 1
       `)
 
+      console.log(questions.length, read.length)
+      const hasQuestions = (questions.length > 0) || (read.length > 0)
+
       await db.close()  
-      res.render("room", { roomId, questions, read })
+      res.render("room", { roomId, questions, read, hasQuestions })
+   },
+
+   enter(req, res) {
+      const roomId = req.body.roomId
+
+      res.redirect(`/room/${roomId}`)
    }
 }

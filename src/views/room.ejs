@@ -26,7 +26,7 @@
           #<%= roomId %>
           <img src="/assets/copy.svg" alt="Copiar número da sala">
         </div>
-        <a href="#" class="button">
+        <a href="/create-room" class="button">
           <img src="/assets/users-white.svg" alt="Criar uma sala">
           Criar Sala
         </a>
@@ -59,6 +59,10 @@
         <h2 class="sr-only">Perguntas da comunidade</h2>
         <div class="questions">
           
+          <% if(!hasQuestions) { %>
+            <%- include('parts/noquestion') %>
+          <% } %>
+
           <% questions.forEach(question => { %>
             <div class="question-wrapper">
               <div class="question-content">

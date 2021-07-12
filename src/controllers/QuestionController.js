@@ -8,20 +8,25 @@ module.exports = {
         
       const theRoom = await db.get(`SELECT * FROM rooms WHERE id = ${room}`)
 
-      if (theRoom && theRoom.password === password) {
-         if (action === "delete") {
-            await db.run(`DELETE FROM questions WHERE id = ${question}`)
-         } 
-         else if (action === "check") {
-            await db.run(`
-               UPDATE questions SET read = 1 
-               WHERE id = ${question}
-            `)
+      try {
+         if (theRoom && theRoom.password === password) {
+            if (action === "delete") {
+               await db.run(`DELETE FROM questions WHERE id = ${question}`)
+            } 
+            else if (action === "check") {
+               await db.run(`
+                  UPDATE questions SET read = 1 
+                  WHERE id = ${question}
+               `)
+            }
+            res.redirect(`/room/${room}`)
+         } else {
+            res.render("index", {page: "passincorrect", room})
          }
+      } 
+      finally {
+         await db.close()
       }
-
-      await db.close()
-      res.redirect(`/room/${room}`)
    },
    
    async create(req, res) {
