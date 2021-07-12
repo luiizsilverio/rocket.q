@@ -1,4 +1,4 @@
-# happy
+# Rocket.Q
 ## Conteúdo
 * [Sobre o Projeto](#sobre-o-projeto)
 * [Tecnologias](#hammer_and_wrench-tecnologias)
@@ -23,7 +23,7 @@ O Rocket.Q é uma aplicação de interação através de perguntas, sendo possí
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/vp3iFfd1ohCbHyDX9jCiQi/Roquet.q-%2302). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :camera_flash: Screenshots
-![](https://github.com/luiizsilverio/rocket.q/blob/main/public/assets/screenshots/rocketq.gif)
+![](https://github.com/luiizsilverio/rocket.q/blob/main/public/screenshots/rocketq.gif)
 
 ## :car: Iniciando o projeto
 ```bash
