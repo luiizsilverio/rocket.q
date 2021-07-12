@@ -58,7 +58,6 @@ module.exports = {
          WHERE room = ${ roomId } AND read = 1
       `)
 
-      console.log(questions.length, read.length)
       const hasQuestions = (questions.length > 0) || (read.length > 0)
 
       await db.close()  
