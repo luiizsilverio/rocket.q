@@ -1,4 +1,11 @@
-# Rocket.Q
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/luiizsilverio/rocket.q/blob/main/public/assets/logo.svg" />
+    </td>
+  </tr>
+</table>
+
 ## Conteúdo
 * [Sobre o Projeto](#sobre-o-projeto)
 * [Tecnologias](#hammer_and_wrench-tecnologias)
