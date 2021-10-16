@@ -3,6 +3,7 @@
     <td>
       <img src="https://github.com/luiizsilverio/rocket.q/blob/main/public/assets/logo.svg" />
     </td>
+    <td><h1>Rocket.q</h1></td>
   </tr>
 </table>
 
